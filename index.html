@@ -47,6 +47,14 @@
 <link rel="stylesheet" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css">
 
   
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.9/dist/katex.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@waline/client@v2/dist/waline.css">
+
   
   
   
@@ -195,30 +203,24 @@
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2024-08-26</span>
-        <span><span class="icon-pencil"></span>81 字</span>
+        <span><span class="icon-pencil"></span>90 字</span>
         <span><span class="icon-clock"></span>1 分钟</span>
       </div>
       <h2 class="post-title">博客开发日志</h2>
       <article class="post-article">
         
-           博客开发日志
- 2024.8.10
-于某处学习了如何使用hexo搭建博客
+          博客开发日志2024.8.10于某处学习了如何使用hexo搭建博客
 便有此文
- 2024.8.11
-将在洛谷发的记录迁移至此（共计两篇）
- 2024.8.17
-更新了关于页面
+2024.8.11将在洛谷发的记录迁移至此（共计两篇）
+2024.8.17更新了关于页面
 目前问题
 
-
-关于页面有乱码问题未解决
-
+ 关于页面有乱码问题未解决
 
 头像无法正常显示
 
 
-
+2020.8.30增加了评论功能
 
         
       </article>
@@ -278,11 +280,9 @@
       <h2 class="post-title">数论</h2>
       <article class="post-article">
         
-           数论板子
- 欧拉函数：
-12345678910void pir(int a)&amp;#123;	int res = a;	for(int i = 2;i &amp;lt;= a / i;++i)		if(a % i == 0)&amp;#123;			res = res / i *(i - 1);			while(a % i == 0)a /= i;		&amp;#125;	if(a &amp;gt; 1)res = res / a * (a - 1);	cout&amp;lt;&amp;lt;res&amp;lt;&amp;lt;endl;&amp;#125; 
- 最大公约数（gcd）：
-123int gcd(int a,int b)&amp;#123;	return b 
+          数论板子欧拉函数：12345678910void pir(int a)&amp;#123;	int res = a;	for(int i = 2;i &amp;lt;= a / i;++i)		if(a % i == 0)&amp;#123;			res = res / i *(i - 1);			while(a % i == 0)a /= i;		&amp;#125;	if(a &amp;gt; 1)res = res / a * (a - 1);	cout&amp;lt;&amp;lt;res&amp;lt;&amp;lt;endl;&amp;#125; 
+
+最大公约数（gcd）：123int gcd(int a,int b)&amp;#123;	return b ? gcd
         
       </article>
     </div>
@@ -306,19 +306,17 @@
     <div class="post-info">
       <div class="post-meta">
         <span><span class="icon-calendar"></span>2024-08-10</span>
-        <span><span class="icon-pencil"></span>80 字</span>
+        <span><span class="icon-pencil"></span>75 字</span>
         <span><span class="icon-clock"></span>1 分钟</span>
       </div>
       <h2 class="post-title">Hello World</h2>
       <article class="post-article">
         
           Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
- Quick Start
- Create a new post
-1$ hexo new &amp;quot;My New Post&amp;quot;
+Quick StartCreate a new post1$ hexo new &amp;quot;My New Post&amp;quot;
+
 More info: Writing
- Run server
-1$ hex
+Run server1$ hexo ser
         
       </article>
     </div>
@@ -354,6 +352,22 @@ More info: Writing
   </div>
 </div>
 <div class="sidebar-social">
+  
+    <div class="icon-email sidebar-social-icon">
+      <a href=hikazyoosaki@gmail.com itemprop="url" target="_blank" aria-label="email"></a>
+    </div>
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/hikazyo itemprop="url" target="_blank" aria-label="github"></a>
+    </div>
+  
+    <div class="icon-twitter sidebar-social-icon">
+      <a href=https://twitter.com/Hikazyo itemprop="url" target="_blank" aria-label="twitter"></a>
+    </div>
+  
+    <div class="icon-bilibili sidebar-social-icon">
+      <a href=https://space.bilibili.com/473994497 itemprop="url" target="_blank" aria-label="bilibili"></a>
+    </div>
   
 </div>
 <div class="sidebar-menu">
@@ -458,6 +472,22 @@ More info: Writing
 </div>
 <div class="sidebar-social">
   
+    <div class="icon-email sidebar-social-icon">
+      <a href=hikazyoosaki@gmail.com itemprop="url" target="_blank" aria-label="email"></a>
+    </div>
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/hikazyo itemprop="url" target="_blank" aria-label="github"></a>
+    </div>
+  
+    <div class="icon-twitter sidebar-social-icon">
+      <a href=https://twitter.com/Hikazyo itemprop="url" target="_blank" aria-label="twitter"></a>
+    </div>
+  
+    <div class="icon-bilibili sidebar-social-icon">
+      <a href=https://space.bilibili.com/473994497 itemprop="url" target="_blank" aria-label="bilibili"></a>
+    </div>
+  
 </div>
 <div class="sidebar-menu">
   
@@ -546,6 +576,26 @@ More info: Writing
 
 
 
+
+  <script data-pjax type="module">
+    import { init } from "https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.mjs";
+    if(_$('.wcomment')) {
+      window.walineInstance = init({
+        el: '.wcomment',
+        serverURL: 'hikazyo.zeabur.app',
+        lang: 'zh-CN',
+        locale: {},
+        emoji: ["https://unpkg.com/@waline/emojis@1.2.0/weibo","https://unpkg.com/@waline/emojis@1.2.0/alus","https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba","https://unpkg.com/@waline/emojis@1.2.0/tw-emoji"],
+        meta: ["nick","mail","link"],
+        requiredMeta: ["nick","mail"],
+        wordLimit: JSON.parse('0'),
+        comment: true,
+        pageSize: JSON.parse('10'),
+        dark: 'html[data-theme="dark"]',
+        pageview: JSON.parse('true'),
+    });
+    }
+  </script>
 
 
 
